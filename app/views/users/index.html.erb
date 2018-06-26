@@ -1,0 +1,202 @@
+<p id="notice">text10<%= notice %></p>
+
+<p id="text" class="simple">ruby on rails<p>
+<ul>
+  <li>coffe</li>
+  <li>tea</li>
+  <li>mil</li>
+  <li>water</li>
+
+</ul>
+
+<p id="test">this is some txt<b>bold</b>text in a paragraph</p>
+
+<button id="btn1">show text</button>
+<button id="btn2">show html</button>
+
+
+
+<p id="text2" class="simple2">user id</p>
+<p id="text1" class="simple3">exit<p>
+<div id="subject_text1" class="text3">heard</div>
+<div id="subject_text2">color</div>
+<div id="subject_text4" class="text4">red</div>
+<h1>read</h1>
+<h1 id="simple1" class="user1">write</h1>
+<h1>word</h1>
+
+<p>welcome to hyd</p>
+<p>hello world</p>
+<p>ruby on rails devloper</p>
+<p>software engg</p>
+
+<p id="r1">welcome to hyd</p>
+
+<p id="test1">This is a paragraph.</p>
+<p id="test2">This is another paragraph.</p>
+
+<p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+
+<button id="btn1">Set Text</button>
+<button id="btn2">Set HTML</button>
+<button id="btn3">Set Value</button>
+
+
+
+
+
+
+<button id = "simple_button1">click me</button><br>
+<button id = "simple_button2">Click on</button><br>
+<button id = "simple_button3">Click off</button><br>
+<button id = "simple_button8">Click hide</button>
+
+
+<p id="r3">This is a paragraph.</p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>City</th>
+      <th>Country</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Confirmation password</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.city %></td>
+        <td><%= user.country %></td>
+        <td><%= user.email %></td>
+        <td><%= user.password %></td>
+        <td><%= user.confirmation_password %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>
+
+
+<script>
+  /////alert("ruby on 
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    alert("Text: " + $("#test").text());
+  });
+  $("#btn2").click(function(){
+    alert("HTML: " + $("#test").html());
+  });
+  $("#btn1").click(function(){
+    alert("Value: " + $("#test").val());
+  });
+});
+
+
+
+
+  // rails");
+  // $("p").hide();
+  // $("div").hide();
+  // $("h1").hide();
+  // $("#text").hide();
+  // $("#text1").hide();
+  // $("#text2").hide();
+  // $("#subject_text1").hide();
+  // $("#subject_text2").hide();
+  //  $("#subject_text4").hide();
+  // $("#ruby on rails").hide();
+  // $("#simple1").hide();
+  // $(".simple").hide();
+  // $(".simple2").hide();
+  // $(".simple3").hide();
+  // $(".text3").hide();
+  // $(".text4").hide();
+  // $(".user1").hide();
+  // $("*").hide();
+  // $("button").click(function(){
+  // $(this).hide();
+  // });
+
+  // $(this).hide();
+
+
+  // $("p.simple").hide();
+  // $("p.simple2").hide();
+  // $("p:first").hide();
+  // $("p:last").hide();
+  // $("p:last").hide();
+  // $("p:last").hide();
+  // $("ul li:first").hide();
+  // $("ul li:last").hide();
+  // $("* p:first").hide();
+  // $("* div:first").hide();
+  // $("* div:last").hide();
+  // $("[id]").hide();
+  // $("[class]").hide();
+  // $("[name]").hide();
+  //$("[id = 'para1']")
+  // $("ul li:first").hide();
+  // $("* div:first").hide();
+  // $("[id]").hide();
+  // $("[value]").hide();
+
+     // $("[name]").hide();
+     // $("[id = 'para1']").hide();
+
+//      $(document).ready(function(){
+//     $("p").click(function(){
+//         $(this).hide();
+//     });
+// });
+
+//         $(document).ready(function(){
+//     $("p").dblclick(function(){
+//         $(this).hide();
+//     });
+// });
+          
+
+
+  //  $(document).ready(function(){
+  //     $("#r1").mouseenter(function(){
+  //       alert("You entered p1!");
+  //     });
+  // });
+
+//   $("#r3").mouseleave(function(){
+//     alert("Bye! You now leave r3!");
+// });
+
+
+// $(document).ready(function(){
+//     $("#r3").hover(function(){
+//         alert("You entered r3!");
+//     },
+//     function(){
+//         alert("Bye! You now leave r3!");
+//     }); 
+// });
+
+
+
+
+
+     
+
+
+
+
+</script>
