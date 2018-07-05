@@ -1,0 +1,2 @@
+module RealesatesHelper
+end

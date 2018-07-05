@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @realesate.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @realesate.last_name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @realesate.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @realesate.city %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @realesate.email %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @realesate.country %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @realesate.password %>
+</p>
+
+<p>
+  <strong>Confirmation password:</strong>
+  <%= @realesate.confirmation_password %>
+</p>
+
+<%= link_to 'Edit', edit_realesate_path(@realesate) %> |
+<%= link_to 'Back', realesates_path %>

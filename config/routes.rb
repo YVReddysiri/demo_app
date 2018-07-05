@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  resources :employees
+  resources :pictures
+  resources :cars
+  resources :companies
+  resources :appointments
+  resources :suppliers
+  resources :accounts
+  resources :books
+  resources :authors
+  resources :roles
+  resources :addresses
+  resources :clients
+  resources :orders
+  resources :realesates
   resources :cities
   resources :users
   resources :sites

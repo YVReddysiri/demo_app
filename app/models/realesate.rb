@@ -1,0 +1,2 @@
+class Realesate < ApplicationRecord
+end

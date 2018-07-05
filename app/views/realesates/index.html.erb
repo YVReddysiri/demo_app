@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Realesates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>Email</th>
+      <th>Country</th>
+      <th>Password</th>
+      <th>Confirmation password</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @realesates.each do |realesate| %>
+      <tr>
+        <td><%= realesate.first_name %></td>
+        <td><%= realesate.last_name %></td>
+        <td><%= realesate.address %></td>
+        <td><%= realesate.city %></td>
+        <td><%= realesate.email %></td>
+        <td><%= realesate.country %></td>
+        <td><%= realesate.password %></td>
+        <td><%= realesate.confirmation_password %></td>
+        <td><%= link_to 'Show', realesate %></td>
+        <td><%= link_to 'Edit', edit_realesate_path(realesate) %></td>
+        <td><%= link_to 'Destroy', realesate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Realesate', new_realesate_path %>
