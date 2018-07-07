@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @job.username %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @job.email_id %>
+</p>
+
+<p>
+  <strong>Confirmation email:</strong>
+  <%= @job.email_id_confirmation %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @job.password %>
+</p>
+
+<p>
+  <strong>Confirmation password:</strong>
+  <%= @job.password_confirmation %>
+</p>
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>

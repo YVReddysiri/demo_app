@@ -1,5 +1,5 @@
-class RenameAnthorToAuthorUpdatedInBook < ActiveRecord::Migration[5.0]
+class RenameauthorToAuthorUpdatedInBook < ActiveRecord::Migration[5.0]
   def change
-  	rename_column :books, :anthor_id, :author_id
+  	rename_column :books, :author_id, :author_id
   end
 end

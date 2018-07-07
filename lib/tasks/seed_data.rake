@@ -44,5 +44,5 @@ namespace :seed_data do
   	   (1..50).each do |i|
   	   	   Car.create(model:"456#{i}",company_id:"23#{i}")
   	   	end
-  	end   	   
+  	end 
 end

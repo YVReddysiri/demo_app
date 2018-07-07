@@ -2,10 +2,10 @@
 
 one:
   book_id: 1
-  anthor_id: 1
+  author_id: 1
   published_at: 2018-06-29 10:58:18
 
 two:
   book_id: 1
-  anthor_id: 1
+  author_id: 1
   published_at: 2018-06-29 10:58:18
